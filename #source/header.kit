@@ -10,10 +10,9 @@
 	<div class="header__container container">
 
 		<div class="header__row d-flex">
-			<a href="#" class="header__logo">ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></a>
-
+			<a href="#" class="header__logo icon-logo"><p>ЛИПСКИЙ <br> <span>И ПАРТНЕРЫ</span></p></a>
 			<!-- Меню с иконкой бургера -->
-			<div class="header__menu menu">
+			<div class="header__menu menu d-flex">
 				<div class="menu__icon icon-menu">
 					<span></span>
 					<span></span>
@@ -21,20 +20,36 @@
 				</div>
 				<nav class="menu__body">
 					<ul class="menu__list d-flex">
-						<li><a href="#" class="menu__link">О нас</a></li>
-						<li><a href="#" class="menu__link">Стоимость</a></li>
-						<li><a href="#" class="menu__link">Публикации, статьи, исследования</a></li>
-						<li><a href="#" class="menu__link">Блог</a></li>
-						<li><a href="#" class="menu__link">Контакты</a></li>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Стоимость</a></li>
+						<li><a href="#">Публикации, статьи, исследования</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
-			</div>
-
-			<div class="header__contact d-flex">
-				<a href="#">info@lipskiy-konsalting.ru</a>
-				<a href="#">8 800 700 60 55</a>
+				<div class="header__contact d-flex">
+					<a href="#" class="contact-mail">info@lipskiy-konsalting.ru</a>
+					<a href="#" class="contact-tel">8 800 700 60 55</a>
+				</div>
 			</div>
 		</div>
+
+		<h1>Липский и партнеры <br>
+			консультации <br>
+			для бизнеса
+		</h1>
+
+		<form class="header__form" action="#">
+			<input type="text" autocomplete="off" name="form[]" placeholder="Имя" data-value="" class="input">
+			<input type="email" autocomplete="off" name="form[]" placeholder="e-mail" data-value="" class="input__phone">
+			<input type="tel" autocomplete="off" name="form[]" placeholder="Телефон" data-value="" class="input__phone">
+			<button type="submit" class="form__btn btn">Жду звонка</button>
+			<p>
+				Нажимая на кнопку "Позвоните мне" я даю свое
+				согласие на обработку персональных данных и
+				принимаю условия соглашения
+			</p>
+		</form>
 
 	</div>
 

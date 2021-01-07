@@ -1,7 +1,8 @@
 //====================================================================================================
 .header {
 	position: relative;
-	padding-top: 60px;
+	padding-top: 53px;
+	padding-bottom: 78px;
 
 	&__container {
 		position: relative;
@@ -10,13 +11,35 @@
 	}
 
 	&__logo {
+		display: flex;
+		align-items: center;
+		p {
 		font-size: 23.48px;
+		line-height: 16px;
+		font-family: 'OnePlusOne';
+		font-weight: 400;
 		color: #1A1818;
+		margin-top: 5px;
 		span {
-			// font-size: 14.17px;
-			color: #1A1818;
+			font-size: 14.17px;
+			line-height: 10px;
+			font-weight: 400;
+			letter-spacing: 4.8px;
+			color: #145629;
 		}
 	}
+}
+
+.icon-logo:before {
+	content:"";
+	float: left;
+	width: 48px;
+	height: 54px;
+	margin-right: 28px;
+	background-position: 0 0;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0Ny4zMDEiIGhlaWdodD0iNTQuNjE5IiB2aWV3Qm94PSIwIDAgNDcuMzAxIDU0LjYxOSI+DQogIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF80NyIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDE3OS4yOSAtNTIuMTA4KSI+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF82IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA2IiBkPSJNLTQxNzkuMjEzLDY1LjcxOGwtLjA3Ny4wNDR2MjcuMzFsMjMuNjA2LDEzLjYyOVY3OS4zWiIgZmlsbD0iIzRiNzMyZSIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfNyIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNyIgZD0iTS00MTMyLjA2NSw2NS43MThsLTIzLjU3NCwxMy42MTEtLjA0NS0uMDI2djI3LjRsLjA0NS4wMjYsMjMuNjUtMTMuNjU1VjY1Ljc2MloiIGZpbGw9IiM4YWJiMmEiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzgiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDgiIGQ9Ik0tNDEzMi4wNjUsNjUuNzE4bC0yMy41NzQtMTMuNjExLTIzLjU3NCwxMy42MTEsMjMuNTc0LDEzLjYxMVoiIGZpbGw9IiM4YWI4MmQiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzkiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDkiIGQ9Ik0tNDE1NS42MzksNzkuMzczbC0xMy4wMjgtNy41MjFWNzkuMWwxMy4wMjgsNy41MjEsMjMuNjUtMTMuNjU1VjY1LjcxOFoiIGZpbGw9IiNmZmYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzEwIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxMCIgZD0iTS00MTU1LjYzOSw5My4zNDFsLTEzLjAyOC03LjUyMXY3LjI1MmwxMy4wMjgsNy41MjEsMjMuNjUtMTMuNjU1Vjc5LjY4NloiIGZpbGw9IiNmZmYiLz4NCiAgPC9nPg0KPC9zdmc+DQo=');
+}
 
 	&__img {
 		max-width: 1180px;
@@ -44,6 +67,7 @@
     -moz-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%;
+    box-shadow: -15px 0px 43px -28px #000000;
 	}
 
 	&__img-big:before {
@@ -83,7 +107,7 @@
 		width: 88px;
 		height: 90px;
 		background: #8AB82D;
-		border-radius: 25px;
+		border-radius: 20px;
 		overflow: hidden;
     transform: rotate(-43deg);
     -moz-transform-origin: 0 100%;
@@ -95,8 +119,6 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	// width: 280px;
- //  height: 313px;
   border-bottom: 280px solid #8AB82D;
   border-left: 313px solid transparent;
 	}
@@ -107,15 +129,16 @@
 	}
 
 	&__row {
-		background: #fff;
-		border-radius: 20px;
-		border: 1px solid #000;
+		justify-content: space-between;
+		margin-bottom: 80px;
+	}
+	&__contact {
+		margin-right: 22px;
 	}
 }
 
 .d-flex {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
@@ -126,22 +149,48 @@
 	}
 }
 .menu {
+	background: #fff;
+	border-radius: 20px;
+	// border: 1px solid #000;
+	max-width: 1050px;
+	width: 100%;
+	min-height: 40px;
+	justify-content: space-between;
 	&__icon {}
 	&__body {}
-	&__list {}
-	&__link {
+	&__list {
+		margin-left: 27px;
+		li a {
 		font-size: 14px;
 		color: #1A1818;
-		margin-right: 40px;
-		// &:last-child {
-		// 	 margin:0px 0px 0px 0px;
-		// }
+		margin-right: 35px;
+		font-weight: 400;
+		padding-bottom: 2.3px;
+		&:hover {
+			color: #8AB82D;
+			border-bottom: 0.5px solid #8AB82D;
+		}
+		}
 	}
 }
-.icon-menu {
+
+.header__contact {
+	max-width: 360px;
+	width: 100%;
+	justify-content: space-between;
 }
 
-//====================================================================================================
+.contact-mail {
+	font-size: 14px;
+	font-weight: 400;
+	color: #1A1818;
+	// margin-right: 36px;
+}
+.contact-tel {
+	font-size: 24px;
+	font-weight: 400;
+	color: #8AB82D;
+}
 
 	// Стиль иконки бургера
 	.icon-menu{
@@ -180,3 +229,35 @@
 	transition: all 0.35s;
 }
 
+.header__container h1 {
+	font-size: 48px;
+	line-height: 52px;
+	font-weight: 900;
+	color: #8AB82D;
+	margin-bottom: 68px;
+}
+
+.header__form {
+	max-width: 302px;
+	width: 100%;
+}
+
+.header__form input{
+	 height: 40px;
+	 padding: 0 21.5px;
+	 border-radius: 20px;
+}
+
+.header__form input, button {
+	 margin-bottom: 22px;
+}
+
+.header__form p {
+	max-width: 227px;
+	width: 100%;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: 16px;
+	color: #6D6F72;
+	margin: 0px auto;
+}

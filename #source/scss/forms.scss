@@ -8,9 +8,20 @@
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn{
-	display: inline-block;
-	padding: 0px 0px;
-	&:hover{}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	width: 302px;
+	height: 40px;
+	background: #8AB82D;
+	border-radius: 20px;
+	&:hover{
+		background: #8AB82D;
+		color: #fff;
+	}
 	&.fw{width: 100%;}
 }
 //</BUTTONS>====================================================================================================
@@ -57,11 +68,12 @@
 //<INPUT (inp+tab)>====================================================================================================
 input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .input, .input__phone{
-	border: 1px solid #000;
+	border: 0.7px solid #AEB0B3;
 	border-radius: 0px;
 	width: 100%;
 	display: block;
 	padding: 0px 10px;
+	color: #1A1818;
 	&.focus{}
 	&.err{}
 }
