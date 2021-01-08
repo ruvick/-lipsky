@@ -2,7 +2,7 @@
 .header {
 	position: relative;
 	padding-top: 53px;
-	padding-bottom: 78px;
+	padding-bottom: 73px;
 
 	&__container {
 		position: relative;
@@ -67,7 +67,8 @@
     -moz-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%;
-    box-shadow: -15px 0px 43px -28px #000000;
+    box-shadow: -35px 5px 38px -40px rgba(0,0,0,0.6);
+      box-shadow: -38px 0px 22px -33px rgba(0,0,0,0.6);
 	}
 
 	&__img-big:before {
@@ -116,11 +117,15 @@
 	}
 
 	&__block-green {
+	background: url("../img/angle.png") no-repeat;
+	background-size: cover;
 	position: absolute;
 	bottom: 0;
 	right: 0;
-  border-bottom: 280px solid #8AB82D;
-  border-left: 313px solid transparent;
+  // border-bottom: 280px solid #8AB82D;
+  // border-left: 313px solid transparent;
+  width: 280px;
+  height: 313px;
 	}
 
 	&__img-c {

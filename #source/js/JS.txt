@@ -8,6 +8,7 @@
 //@prepros-append jquery.autosize.input.min.js
 //@prepros-append jquery.ns-autogrow.min.js
 //@prepros-append jquery.parallax.js
+//@prepros-append jquery.scrolltofixed.min.js
 //@prepros-append baguetteBox.js
 //@prepros-append livesearch.js
 //@prepros-append slick.min.js
@@ -16,6 +17,7 @@
 //@prepros-append map.js
 //@prepros-append sliders.js
 //@prepros-append scroll.js
+//@prepros-append nicescroll.min.js
 //@prepros-append fullscroll.js
 //@prepros-append responsive.js
 

@@ -640,7 +640,7 @@ textarea.input {
 .header {
   position: relative;
   padding-top: 53px;
-  padding-bottom: 78px; }
+  padding-bottom: 73px; }
   .header__container {
     position: relative;
     z-index: 5; }
@@ -698,8 +698,10 @@ textarea.input {
     -moz-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%;
-    -webkit-box-shadow: -15px 0px 43px -28px #000000;
-    box-shadow: -15px 0px 43px -28px #000000; }
+    -webkit-box-shadow: -35px 5px 38px -40px rgba(0, 0, 0, 0.6);
+    box-shadow: -35px 5px 38px -40px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -38px 0px 22px -33px rgba(0, 0, 0, 0.6);
+    box-shadow: -38px 0px 22px -33px rgba(0, 0, 0, 0.6); }
   .header__img-big:before {
     content: "";
     position: absolute;
@@ -745,11 +747,13 @@ textarea.input {
     -ms-transform-origin: 0 100%;
     -o-transform-origin: 0 100%; }
   .header__block-green {
+    background: url("../img/angle.png") no-repeat;
+    background-size: cover;
     position: absolute;
     bottom: 0;
     right: 0;
-    border-bottom: 280px solid #8AB82D;
-    border-left: 313px solid transparent; }
+    width: 280px;
+    height: 313px; }
   .header__img-c {
     width: 100%;
     height: auto; }
@@ -1020,10 +1024,11 @@ h3 {
     .advant__item-left:before {
       content: "";
       float: left;
-      width: 70.3px;
-      height: 66.84px;
-      background-position: 0 0;
+      width: 70px;
+      height: 68px;
+      background-position: 50% 50%;
       background-repeat: no-repeat;
+      background-size: 90%;
       -webkit-transform: rotate(42deg);
       -ms-transform: rotate(42deg);
       transform: rotate(42deg); }
@@ -1044,8 +1049,8 @@ h3 {
     border-radius: 45px;
     margin-left: -55px;
     padding: 0 61px 0 106px;
-    -webkit-box-shadow: 0px 20px 7px -15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 20px 7px -15px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 36px 22px -38px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 36px 22px -38px rgba(0, 0, 0, 0.7); }
     .advant__item-right p {
       font-size: 14px;
       font-weight: 400;
@@ -1145,12 +1150,12 @@ h3 {
     max-width: 291px;
     width: 100%;
     background: #8AB82D;
-    padding: 50px 18px 55px 50px; }
+    padding: 50px 18px 0px 50px; }
     .info__item-gr h3 {
       font-size: 38px;
       font-weight: 900;
       color: #fff;
-      margin-bottom: 43px; }
+      margin-bottom: 50px; }
     .info__item-gr p {
       max-width: 222px;
       width: 100%;
@@ -1161,7 +1166,7 @@ h3 {
   content: "";
   float: left;
   width: 100%;
-  height: 95px;
+  height: 85px;
   background-position: 0 0;
   background-repeat: no-repeat; }
 
@@ -1200,16 +1205,19 @@ h3 {
   .materials__img-01 {
     height: 254px;
     background: url("../img/materials/01.jpg");
+    border-radius: 38px;
     overflow: hidden;
     margin-bottom: 31px; }
   .materials__img-02 {
     height: 254px;
     background: url("../img/materials/02.jpg");
+    border-radius: 38px;
     overflow: hidden;
     margin-bottom: 31px; }
   .materials__img-03 {
     height: 254px;
     background: url("../img/materials/03.jpg");
+    border-radius: 38px;
     overflow: hidden;
     margin-bottom: 31px; }
   .materials__btn {
@@ -1244,9 +1252,9 @@ h3 {
       width: 100%;
       height: 35px;
       background: #8AB82D;
-      -webkit-transform: rotate(42deg);
-      -ms-transform: rotate(42deg);
-      transform: rotate(42deg);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
       margin-top: -10px;
       border-radius: 7px; }
     .services-info__list li:before {
@@ -1283,7 +1291,7 @@ h3 {
   line-height: 19.2px;
   margin-bottom: 5px; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
   .container {
     padding: 0 10px; } }
 

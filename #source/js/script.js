@@ -290,6 +290,6 @@ function tip() {
 }
 
 //scrollToFixed Фиксовая шапка
-  // $(".header").scrollToFixed({
-  //   marginTop: -1
-  // });
+//   $(".header").scrollToFixed({
+//     marginTop: -1
+//   });
