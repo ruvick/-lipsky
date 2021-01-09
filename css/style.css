@@ -1507,7 +1507,10 @@ h3 {
   .info__item {
     max-width: 45%; }
   .footer__logo {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .menu__list li a:hover {
+    color: #fff;
+    border-bottom: none; } }
 
 @media (max-width: 812px) {
   .header {
