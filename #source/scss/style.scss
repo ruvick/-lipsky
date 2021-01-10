@@ -604,6 +604,9 @@ h3 {
 	.header-services .btn {
 	margin: 0px auto;
 }
+.header .icon-logo:before {
+    margin-right: 13px;
+}
 }
 
 @media (max-width: 1100px) {
@@ -684,22 +687,21 @@ h3 {
   }
 }
 
-@media (max-width: 900px) {
-	.menu__body {
+@media (max-width: 923px) {
+		.menu__body {
 		display: none;
+		margin-right: 0;
 	}
-	.header__logo {
-		margin-left: 50px;
+	.icon-menu {
+		display: block;
 	}
 	.header .icon-logo:before {
     margin-right: 10px;
    }
-	.icon-menu {
-		display: block;
-	}
-	.header__contact {
+.header__contact {
     margin-left: auto;
-	}
+    margin-right: 45px;
+}
 	.menu__list {
     margin-left: 0;
     flex-direction: column;
@@ -711,18 +713,21 @@ h3 {
     color: #fff;
     margin-bottom: 10px;
 }
+.menu__list li a:hover {
+    color: #fff;
+    border-bottom: none;
+}
+.footer__logo {
+	margin-left: 0;
+}
+}
+
+@media (max-width: 900px) {
 	.info {
     padding: 60px 0 35px 0;
 }
 	.info__item {
     max-width: 45%;
-}
-.footer__logo {
-	margin-left: 0;
-}
-.menu__list li a:hover {
-    color: #fff;
-    border-bottom: none;
 }
 }
 
