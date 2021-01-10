@@ -226,22 +226,45 @@
 			}
 		}
 	}
-	.menu__body.active {
-	display: block;
+// 	.menu__body.active {
+// 	display: block;
+// 	position: fixed;
+// 	z-index: 50000;
+// 	background: rgba(0,0,0,0.8);
+// 	// opacity: 0.95;
+// 	// left: 0;
+// 	right: 0;
+// 	top: 0;
+// 	width: 50%;
+// 	height: 100%;
+// 	padding: 35px 10px 0px 20px;
+// 	margin-top: 62px;
+// 	overflow: auto;
+// 	transition: left .2s;
+// }
+
+	// .mob-menu {
+	// display: none;
+	// }
+	.mob-menu {
+	// display: block;
 	position: fixed;
 	z-index: 50000;
 	background: rgba(0,0,0,0.8);
 	// opacity: 0.95;
-	// left: 0;
-	right: 0;
 	top: 0;
 	width: 50%;
 	height: 100%;
 	padding: 35px 10px 0px 20px;
 	margin-top: 62px;
 	overflow: auto;
-	// transition: all 0.35s;
+	right: -50%;
+   transition: right 0.5s;
 }
+	.mob-menu.active { 
+	right: 0%;
+}
+
 
 .header__container h1 {
 	font-size: 48px;

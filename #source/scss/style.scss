@@ -804,10 +804,10 @@ h3 {
     background-position: 0 50%;
     margin-right: 0px;
  }
-.menu__body {
+.mob-menu  {
     max-width: 100%;
 }
-.menu__body.active {
+.mob-menu.active {
     width: 100%;
 }
 .footer__row {
@@ -965,7 +965,7 @@ h3 {
     background-position: 0 50%;
     margin-right: 0px;
  }
- .menu__body.active {
+ .mob-menu.active {
     background: rgba(0, 0, 0, 0.9);
 	}
  .menu__list {

@@ -864,18 +864,23 @@ textarea.input {
       transform: rotate(45deg);
       bottom: 8px; }
 
-.menu__body.active {
-  display: block;
+.mob-menu {
   position: fixed;
   z-index: 50000;
   background: rgba(0, 0, 0, 0.8);
-  right: 0;
   top: 0;
   width: 50%;
   height: 100%;
   padding: 35px 10px 0px 20px;
   margin-top: 62px;
-  overflow: auto; }
+  overflow: auto;
+  right: -50%;
+  -webkit-transition: right 0.5s;
+  -o-transition: right 0.5s;
+  transition: right 0.5s; }
+
+.mob-menu.active {
+  right: 0%; }
 
 .header__container h1 {
   font-size: 48px;
@@ -1573,9 +1578,9 @@ h3 {
     background-size: 80%;
     background-position: 0 50%;
     margin-right: 0px; }
-  .menu__body {
+  .mob-menu {
     max-width: 100%; }
-  .menu__body.active {
+  .mob-menu.active {
     width: 100%; }
   .footer__row {
     -webkit-box-align: start;
@@ -1699,7 +1704,7 @@ h3 {
     background-size: 65%;
     background-position: 0 50%;
     margin-right: 0px; }
-  .menu__body.active {
+  .mob-menu.active {
     background: rgba(0, 0, 0, 0.9); }
   .menu__list {
     margin-bottom: 20px; }
